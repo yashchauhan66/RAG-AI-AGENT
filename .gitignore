@@ -1,0 +1,4 @@
+ragAgent-backend/node_modules
+ragAgent-frontend/node_modules
+.env
+.env.local

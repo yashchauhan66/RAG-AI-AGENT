@@ -1,0 +1,32 @@
+{
+  "name": "reg-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Production-ready RAG AI system with Groq LLM and MongoDB vector store",
+  "dependencies": {
+    "@huggingface/inference": "^4.13.14",
+    "@langchain/groq": "^1.1.4",
+    "@langchain/ollama": "^1.2.6",
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "groq-sdk": "^0.37.0",
+    "langchain": "^1.2.29",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.4",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "redis": "^5.11.0",
+    "uuid": "^13.0.0"
+  }
+}

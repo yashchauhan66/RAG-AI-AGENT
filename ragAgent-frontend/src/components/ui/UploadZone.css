@@ -1,0 +1,107 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.drop-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.drop-zone:hover {
+    border-color: var(--bg-accent);
+    background: rgba(108, 92, 231, 0.05);
+}
+
+.drop-zone.loading {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.upload-icon {
+    color: var(--text-secondary);
+}
+
+.upload-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    word-break: break-all;
+}
+
+.btn-upload {
+    background-color: var(--bg-accent);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-upload:hover {
+    background-color: var(--bg-accent-hover);
+}
+
+.status-msg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-msg.info {
+    color: var(--text-accent);
+    background: rgba(108, 92, 231, 0.1);
+}
+
+.status-msg.success {
+    color: var(--success);
+    background: rgba(0, 184, 148, 0.1);
+}
+
+.status-msg.error {
+    color: var(--error);
+    background: rgba(255, 118, 117, 0.1);
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

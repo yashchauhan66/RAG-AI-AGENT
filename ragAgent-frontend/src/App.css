@@ -1,0 +1,7 @@
+/* Main App Layout */
+.app-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  width: 100vw;
+  height: 100vh;
+}
