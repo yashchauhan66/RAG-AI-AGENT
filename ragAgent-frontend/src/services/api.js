@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5010/api';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -26,7 +26,7 @@ export const ingestService = {
         try {
             const formData = new FormData();
             formData.append('pdf', file);
-            // Use the axios instance to benefit from baseURL and interceptors if any
+            
             const response = await api.post('/ingest', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
